@@ -22,14 +22,14 @@ armor.
 :::note[Try it yourself!]
 You can verify this issue yourself by using a few commands in your world.
 
-**1) Give yourself a sword with 5,000 damage.**
+**1) Give yourself a sword with 5000000000000 damage.**
 ```console
-/give @a golden_sword{AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:5000,Slot:mainhand,Name:"generic.attack_damage",UUID:[I;-12454,17070,183450,-34140]}]}
+/give @a golden_sword{AttributeModifiers:[{AttributeName:"generic.attack_damage",Amount:5000000000000,Slot:mainhand,Name:"generic.attack_damage",UUID:[I;-12454,17070,183450,-34140]}]}
 ```
 
 **2) Summon a mob with 10,000 health and max health.**
 ```console
-/summon spider ~ ~ ~ {Health:10000,Attributes:[{Name:"generic.max_health",Base:10000f}]}
+/summon spider ~ ~ ~ {Health:10000,Attributes:[{Name:"generic.max_health",Base:1000000000f}]}
 ```
 
 **3) Use the sword to attack the mob.**
@@ -74,12 +74,12 @@ all attributes added by the mod loader and the mod. This section should look lik
     "minecraft:generic.max_health": {
       "enabled": true,
       "min": {
-        "default": 1,
-        "value": 1
+        "default": 1000000000,
+        "value": 1000000000
       },
       "max": {
         "default": 1024,
-        "value": 1000000
+        "value": 1000000000000000
       }
     }
 ```
